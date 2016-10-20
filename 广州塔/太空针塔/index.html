@@ -1,0 +1,196 @@
+
+<!DOCTYPE html public>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<title>Space Needle - Seattle Landmark and Tourist Attraction</title>
+    
+    <!-- meta data -->
+	<meta name="description" content="Built in 1962, the Space Needle has since become the symbol of Seattle, and one of the most recognizable structures in the world."/>
+	<meta property='og:locale' content='en_US'/>
+	<meta property='og:type' content='article'/>
+	<meta property='og:title' content='Space Needle - Seattle Landmark and Tourist Attraction'/>
+	<meta property='og:description' content='Built in 1962, the Space Needle has since become the symbol of Seattle, and one of the most recognizable structures in the world.'/>
+	<meta property='og:url' content='https://www.spaceneedle.com/'/>
+	<meta property='og:site_name' content='The Space Needle'/>
+	<link rel="canonical" href="https://www.spaceneedle.com/" />
+    
+	<script type="text/javascript">
+
+	    <!-- redirect for https -->
+		
+		if ("https:" == document.location.protocol) {
+    /* secure */
+		} else {
+				/* unsecure */
+				window.location = "https://www.spaceneedle.com/home/";
+		}
+	
+	    <!-- redirect for ie less than 9 -->
+		if (window.attachEvent && !window.addEventListener) {
+			window.location.replace("index-fallback.html");
+		}
+
+	    <!-- redirect for ios less than 7 -->
+		var myNav = navigator.userAgent;
+		if (myNav.indexOf('iPhone'|'iPad'|'iPod') != -1) {
+			var os = myNav.charAt( myNav.indexOf('OS ') + 3 );
+			if(os<7) window.location.replace("/hours-directions");
+		}
+	</script>
+
+<!-- 	<script src="http://shopcf.accesso.com/ShopV4/store/spaceneedle/SN.js" type="text/javascript"></script> -->
+
+	<!-- favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon">
+	<link href="img/touch.png" rel="apple-touch-icon-precomposed">
+
+	<!-- dns prefetch -->
+	<link href="//www.google-analytics.com" rel="dns-prefetch">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/hotspots.css" />
+    <link rel="stylesheet" type="text/css" href="css/space.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+
+	<!-- fonts -->
+<!--     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/724734/710662/css/fonts.css" /> -->
+    <link type="text/css" rel="stylesheet" href="css/70a4173d-24a9-4cf3-bc70-fc273ff6d56d.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+
+    <!-- remove before launch -->
+    <link rel="stylesheet" type="text/css" href="css/fonts-old.css" />
+
+    <script type="text/javascript" src="js/namespace.js"></script>
+    <script type="text/javascript" src="js/libs/webfont.js"></script>
+<!--     <script type="text/javascript" src="js/libs/jquery-1.10.2.min.js"></script> -->
+    <script type="text/javascript" src="js/libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-bigtext.js"></script>
+    <script type="text/javascript" src="js/libs/underscore-min.js"></script>
+    <script type="text/javascript" src="js/libs/underscore-contrib.min.js"></script>
+    <script type="text/javascript" src="js/libs/angular.min.js"></script>
+    <script type="text/javascript" src="js/libs/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="js/assets.js"></script>
+    <script type="text/javascript" src="js/loaderMaskShape.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/positioning.js"></script>
+    <script type="text/javascript" src="js/libs/pixi.dev.js"></script>
+<!--     <script type="text/javascript" src="js/libs/pixi.v2.dev.js"></script> -->
+    <script type="text/javascript" src="js/ruler.js"></script>
+    <script type="text/javascript" src="js/calloutsData.js"></script>
+    <script type="text/javascript" src="modules/menus.module/menu.js"></script>
+    <script type="text/javascript" src="js/scroller.js"></script>
+    <script type="text/javascript" src="js/main2.js"></script>
+    <script type="text/javascript" src="js/angular-app.js"></script>
+    <script type="text/javascript" src="js/sharer.js"></script>
+    <script>
+    	function redirectlink(link) {
+    		console.log("should redirect to " + link);
+    		document.location.href = link;
+    	}
+    </script>
+
+	<script type="text/template" id="billboard-template">
+   	 	<div class="billboard {{section}}-sections">
+			<div class="billboard-title">
+				<div class="head">{{pod_subhead}}</div>
+				<div class="sub-head">{{pod_title}}</div>
+			</div>
+	        <div class="billboard-scaler">
+	            <div class="billboard-content">
+              		{{pod_content}}
+              		{{pod_cta1}}
+              		{{pod_cta2}}
+	            </div>
+<!-- 
+	            <div class="billboard-mobile-cta">
+	            	<div class="clickable" onclick="redirectlink('/hours-directions/')"><a class="clickable" href="/hours-directions/">Hours &amp; Directions</a></div>
+	            	<div class="clickable" onclick="redirectlink('/reservations/')"><a class="clickable" href="/reservations/">Skycity Reservations</a></div>
+	            	<div class="clickable" onclick="redirectlink('https://store.accesso.com/SN')"><a class="clickable" href="https://store.accesso.com/SN">Buy Tickets</a></div>
+	            </div>
+ -->
+	            <div class="billboard-mobile-cta">
+	            	<div class="clickable" data-link="/hours-directions/" onclick="redirectlink('/hours-directions/')">Hours &amp; Directions</div>
+	            	<div class="clickable" data-link="/reservations/" onclick="redirectlink('/reservations/')">Skycity Reservations</div>
+	            	<div class="clickable" data-link="https://store.accesso.com/SN" onclick="redirectlink('https://store.accesso.com/SN')">Buy Tickets</div>
+	            </div>
+	        </div>
+	    </div>
+	</script>
+	<script type="text/template" id="hotspot-template">
+   	 	<div class="hotspot-container">
+			<div class="hotspot {{direction}}">
+				<div class="hotspot-title {{color}}">
+					<div class="hotspot-title-container">
+					  <h1>{{pod_title}}</h1>
+					</div>
+				</div>
+				<div class="hotspot-content">
+					{{pod_content}}
+					{{pod_image[0] && '<img class="pod_image" src="' + pod_image[0].guid + '" />' }}
+					<div class="share show{{pod_shareable}}">
+						<div class="sharelabel"><h2>SHARE</h2></div>
+						<a class="facebook clickable" onClick="Sharer.shareFacebook('http://www.spaceneedle.com/');return false;" href="#"><img src="img/facebook_big.png"/></a>
+						<a class="twitter clickable" onClick="Sharer.shareTwitter('http://www.spaceneedle.com/','{{pod_sharetext}}');return false;" href="#"><img src="img/twitter_big.png"/></a>
+						<a class="google clickable" onClick="Sharer.shareGoogle('http://www.spaceneedle.com/');return false;" href="#"><img src="img/google_big.png"/></a>
+					</div>
+					
+				</div>
+			</div>
+	    </div>
+	</script>
+	<script type="text/template" id="height-hotspot-template">
+   	 	<div class="height-hotspot">
+	      <div class="title clickable">
+            <div class="container clickable">
+              <h1 class="clickable">{{pod_title}}</h1>
+              <div class="jack clickable">
+                <img src="img/hotspot_black.png" />
+              </div>
+            </div>
+	      </div>
+        <div class="content-container">
+	        <div class="content">
+	            {{pod_content}}
+	        </div>
+        </div>
+	    </div>
+	</script>
+
+	<script type="text/template" id="space-template">
+   	 	<div class="space-container">
+        <div class="space">
+          <div class="space-title">
+            <h1>#SNEEDLE</h1>
+          </div>
+          <div class="message">
+            "I scrolled 605 feet to the top of the Space Needle!"
+          </div>
+          <div class="share">
+            <h2>Share</h2>
+			<a class="facebook clickable" onClick="Sharer.shareFacebook('http://www.spaceneedle.com/');return false;" href="#"><img clickable src="img/facebook_big.png"/></a>
+			<a class="twitter clickable" onClick="Sharer.shareTwitter('http://www.spaceneedle.com/','I scrolled 605ft to the top of the Space Needle!');return false;" href="#"><img clickable src="img/twitter_big.png"/></a>
+			<a class="google clickable" onClick="Sharer.shareGoogle('http://www.spaceneedle.com/');return false;" href="#"><img clickable src="img/google_big.png"/></a>
+          </div>
+        </div>
+      </div>
+	</script>
+
+	<script>
+		var _gaq=[['_setAccount','UA-24087904-1'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)})(document,'script');
+	</script>
+	<script type="text/javascript" src="js/accesso.js"></script>
+
+</head>
+<body ng-app="sn.app2">
+  <div id="pixiStage">
+  </div>
+  <div id="menu-module" ng-include="'/home/modules/menus.module/menu.html'" >
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+/* font styles we're loading from external services
+
+typography.com
+font-family: 'Knockout 26 A', 'Knockout 26 B'; font-weight: 400; font-style: normal;
+font-family: 'Knockout 51 A', 'Knockout 51 B'; font-weight: 400; font-style: normal;
+
+fast.fonts.net
+font-family:'BrandonGrotW01-Regular';
+font-family:'Clarendon BT W01 Light';
+
+*/
+
+@font-face {
+    font-family: 'AlohaScriptRegular';
+    src: url('Aloha_Script-webfont.eot');
+    src: url('Aloha_Script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aloha_Script-webfont.woff') format('woff'),
+         url('Aloha_Script-webfont.ttf') format('truetype'),
+         url('Aloha_Script-webfont.svg#AlohaScriptRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BreuerTextRegular';
+    src: url('breuertext-regular.eot?#iefix');
+    src: url('breuertext-regular.eot') format('embedded-opentype'),
+         url('breuertext-regular.woff') format('woff'),
+         url('breuertext-regular.ttf') format('truetype'),
+         url('breuertext-regular.svg#BreuerTextRegular') format('svg');
+}

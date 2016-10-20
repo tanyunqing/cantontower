@@ -1,0 +1,60 @@
+/*
+ *	Author		:蔡应
+ *	Time		：2014年7月31日14:54:36
+ *	Abstract	：广州长隆改版——长隆欢乐世界通用样式文件
+ *
+ */
+
+body ,h1 ,h2 ,h3 ,h4{ font-family:"微软雅黑"; }
+
+/*长隆欢乐世界公用样式*/
+/*导航*/
+#nav { z-index:50; position:fixed; _position:relative; top:0px; left:0px; height:60px; *height:60px; border-top:45px solid #ff7e00;  _border-top-width:3px ; border-bottom:1px solid rgba( 0,0,0,0.1); background:#fff;}
+#logo { float:left; _display:inline-block; width:130px; height:60px; text-indent:-999px; overflow:hidden; background:url(/happy/images/common.png) no-repeat 0px 6px; }
+
+
+.navLink { position:relative; float:left; display:inline-block; width:785px; height:60px; padding-left:20px;  _width:850px; }
+.navLink dl { position:relative; z-index:22; float:left; display:inline-block; width:94px; height:60px; text-align:center; color:#494949; font:normal 14px/60px "微软雅黑"; 
+}
+.navLink dl dt { width:94px; height:60px; }
+.navLink dl dd { width:94px; display: none; opacity: 0; filter:alpha(opacity=0);}
+.navLink dt a{  display:inline-block; width:94px; height:60px; text-align:center; color:#494949; font:normal 14px/60px "微软雅黑"; 
+	-webkit-transition:color 0.3s ease;
+	-moz-transition:color 0.3s ease;
+	-ms-transition:color 0.3s ease;
+	-o-transition:color 0.3s ease;
+	transition:color 0.3s ease;
+}
+
+.navLink dd a{  display:block; width:100%; height:30px; background:#f48e16; text-align:center; color:white; font:normal 12px/30px "宋体"; 
+	-webkit-transition:color 0.3s ease;
+	-moz-transition:color 0.3s ease;
+	-ms-transition:color 0.3s ease;
+	-o-transition:color 0.3s ease;
+	transition:color 0.3s ease;
+}
+
+.navLink dd a:hover{background:#faa440;}
+
+.navLink a:hover ,.navLink a.active { color:#fff; background-position:1px -104px; }
+.navLink .moveActive { position:absolute; z-index:21; top:0px; left:17px; width:94px; height:60px; background:#f48e16; }
+
+
+.enIndex{ display:block; position:absolute; bottom:10px; right:0px; width:none; margin:0px 10px; height:40px; font:normal 14px/40px Arial; color:#494949;}
+.enIndex:hover { text-decoration:underline; }
+
+
+
+/*欢乐世界单独样式*/
+/*底部*/
+#footer {background:#3e2749; }
+.reAdWrap .adCon { background-color:#eb8f23; }
+
+/*
+ *通用样式修改
+ */
+#rightSide .actBtn{ background-position:0px 0px; }
+#rightSide .actListBox{ border-left:6px solid #f6841e; }
+#rightSide .actList li div { background:#f6841e; }
+#rightSide .rquickNav a:hover { color:#eb8f23; }
+#rightSide .bdShareWrap { background-color:#f88219; }

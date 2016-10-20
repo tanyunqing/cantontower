@@ -1,0 +1,212 @@
+.yellow {
+  background-color: rgba(228, 209, 96, 0.9);
+}
+
+.hotspot-container {
+z-index: 11;
+}
+
+.hotspot {
+  bottom: 30px;
+  left: -115pt;
+  width: 300px;
+  position: absolute;
+}
+
+.hotspot.down {
+  left: -115pt;
+  width: 300px;
+  position: absolute;
+  top: 30px;
+  bottom: inherit;
+}
+
+
+.hotspot-title {
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  top: -80px;
+}
+
+.hotspot-title h1 {
+  font-family: 'Knockout 26 A', 'Knockout 26 B', 'Knockout26JuniorFlyweight';
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  color:#444444;
+ }
+
+.hotspot-title-container {
+  width: 280px;
+  height: 50px;
+  margin: auto;
+  padding-top:10px;
+  overflow:visible;
+}
+
+.hotspot-content {
+  padding: 22px 22px 0 22px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 12x;
+  font-family:'BrandonGrotW01-Regular', 'BrandonGrotesqueRegular';
+  padding: 15px;
+  overflow: hidden;
+  bottom: 0px;
+}
+
+.hotspot.down .hotspot-title {
+	position:absolute;
+   top: 0px;
+	bottom: inherit;
+}
+
+.hotspot.down .hotspot-content {
+  bottom: inherit;
+  position: absolute;
+  top: 80px;
+  overflow: visible;
+}
+
+.hotspot-content p { margin: 0; margin-bottom: 10px; }
+.hotspot-content { padding-bottom: 21px !important; }
+
+.hotspot-content img.pod_image {
+	width:270px;
+	height:auto;
+}
+
+/* share buttons ------------------------ */
+
+.hotspot .share {
+	text-align:center;
+	background-image: url(img/social-bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	width: 80px;
+	height: 30px;
+	position: absolute;
+	bottom: -35px;
+	right: 5px;
+}
+
+.hotspot .share.show0 {
+	display:none;
+}
+
+.hotspot .share.show1 {
+	display:block;
+}
+
+.hotspot .share a {
+	float:none;
+	padding:0 2px;
+	line-height: 30px;
+}
+
+.hotspot .share img {
+	vertical-align: middle;
+}
+
+.hotspot .share .facebook img {
+	height:18px;
+}
+.hotspot .share .twitter img {
+	height:14px;
+}
+.hotspot .share .google img {
+	height:16px;
+}
+
+.hotspot .sharelabel {
+	position: absolute;
+	top: -34px;
+	width:100%;
+	text-align:center;
+}
+.hotspot .sharelabel h2 {
+	font-size: 14px;
+  font-family:'BreuerTextRegular';
+  color: #DC5722;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+  line-height:14px;
+}
+
+@media all and (max-width:1024px) {
+	.hotspot .share {
+		display:none!important;
+		width: 110px;
+		/* height: 40px; */
+	}
+	.hotspot .share a {
+		padding:0 7px;
+	}
+	
+}
+
+/* height hotspot ------------------------ */
+
+.height-hotspot .title {
+  background-color: rgba(228, 209, 96, 0.9);
+  height: 40px;
+  position: relative;
+}
+
+.height-hotspot .title h1 {
+  font-family: 'BrandonGrotW01-Regular';
+  font-size: 14px;
+  font-weight: normal;
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 50px 0 10px;
+  white-space:nowrap;
+}
+
+.height-hotspot .content-container {
+  overflow: hidden;
+}
+
+.height-hotspot .jack {
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+.jack img {
+  -webkit-transition: 500ms all;
+  transform-origin:50% 50%;
+  -ms-transform-origin:50% 50%; /* IE 9 */
+  -webkit-transform-origin:50% 50%; /* Safari and Chrome */
+  -moz-transform-origin:50% 50%;
+}
+
+.jack.rotated img {
+  -webkit-transform: rotate(45deg);
+}
+
+.height-hotspot .content {
+  width: 250px;
+  padding: 22px 22px 0 22px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 12x;
+  font-family:'BrandonGrotW01-Regular', 'BrandonGrotesqueRegular';
+  padding: 15px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+
+@media all and (max-width:800px) {
+	.hotspot-container, .height-hotspot {
+		display:none!important;
+	}
+}

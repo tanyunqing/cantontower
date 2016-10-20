@@ -1,0 +1,71 @@
+.space-container {
+	width:100%;
+  pointer-events: none;
+	position:relative;
+}
+
+.space-container .share {
+  pointer-events: auto;
+}
+
+.space {
+  text-align: center;
+  position:relative;
+  margin:0 auto;
+}
+
+.space-title {
+	width:100%;	
+}
+
+.space h1 {
+  font-size: 340px;
+  line-height: 340px;
+  font-family: 'Knockout 46 A', 'Knockout 46 B', 'Knockout46Flyweight';
+  color: #F1D45B;
+  margin-top: 0.475em;
+  margin-bottom: -0.1em;
+  letter-spacing: 6px;
+  font-weight: normal;
+}
+
+.space .message {
+  font-size: 30px;
+  font-family: "Helvetica", Arial, Sans-Serif;
+  color: #DC5722;
+  width: 60%;
+  margin: auto;
+}
+
+.space h2 {
+  font-size: 48px;
+  font-family: 'Knockout 46 A', 'Knockout 46 B', 'Knockout46Flyweight';
+  color: #F1D45B;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: normal;
+  line-height:48px;
+  margin-top: .5em;
+  margin-bottom: .25em;
+}
+
+.space a {
+	margin: 0 10px;
+}
+
+@media all and (max-width:900px) {
+.space-container { padding-top:100px; }
+.space h1 { font-size: 260px!important; line-height: 260px!important; }
+}
+
+@media all and (max-width:700px) {
+.space-container { padding-top:150px; }
+.space h1 { font-size: 210px!important; line-height: 210px!important; }
+}
+
+@media all and (max-width:500px) {
+.space-container { padding-top:300px; }
+.space h1 { font-size: 90px!important; line-height: 90px!important; }
+.space h2 { font-size: 40px!important; }
+.space .message { font-size: 18px!important; }
+}

@@ -1,0 +1,75 @@
+
+<div class="menu-container"
+     id="menu-container"
+     ng-controller="menuController"
+     ng-class="{'hidden': !ready, 'open': isHover || isOpen}"
+     ng-mouseenter="hoverIn()"
+     ng-mouseleave="hoverOut()"
+     ng-cloak>
+     <div class="menu {{backgroundColor}}">
+        <div class="logo"></div>
+        <a class="menu-button"
+           ng-repeat="section in sections"
+           ng-class="section.cssClass"
+           ng-click="openSection(section)"
+           ng-show="section.cssClass"
+           ng-mouseenter="section.openSubSection()"
+           ng-mouseleave="section.closeSubSection()">
+             <p>{{ section.label }}</p>
+        </a>
+        <div class="sub-menu"
+             ng-repeat="subSection in subSections"
+             ng-class="{'open': subSection.isOpen}"
+             ng-mouseenter="subSection.open()"
+             ng-mouseleave="subSection.close()">
+
+            <div class="sub-menu-item"
+               ng-repeat="item in subSection.items"
+               ng-mouseenter="item.hover=true"
+               ng-mouseleave="item.hover=false"
+               ng-click="menuPanelClick(item)"
+               ng-class="{'hover': item.hover}">
+                <div class="title">{{ item.label }}</div>
+                <div class="content" ng-bind-html="item.description"></div>
+                <div ng-click="$event.stopPropagation()">
+                  <a class="{{itemLink.cssClass}} link"
+                     ng-repeat="itemLink in item.links"
+                     ng-click="handleLink(itemLink.url)">
+                     {{ itemLink.label }}
+                     <span class="arrow"></span>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mobile-menu-container"
+     id="mobile-menu-container"
+     ng-controller="mobileMenuController"
+     ng-show="ready" ng-class="{open: showFullSizedMenu}">
+    <div class="menu-button" ng-click="openMenu()"></div>
+    <div class="mobile-menu-page"
+         ng-repeat="page in menuPages"
+         ng-class="{'open': page.isOpen }"
+         ng-style="{'z-index': page.zIndex}">
+        <div class="close-button" ng-click="closeMenu()">close</div>
+        <div class="back-button"
+             ng-show="page.parentId>=0"
+             ng-click="page.close()">back</div>
+        <div class="text-box"
+             ng-show="page.description"
+             ng-bind-html="page.description"></div>
+        <a class="content-button"
+           ng-repeat="child in page.children"
+           ng-click="child.openContent()"
+           ng-class="child.cssClass">
+           {{ child.label }}
+           <img src="img/mobile/button-arrow.png" ng-show="!child.url" />
+        </a>
+        <div class="footer">
+            <a ng-click="openShop()" class="buy-tickets">Buy tickets</a>
+            <a href="/press/" class="jobs">Jobs & press</a>
+        </div>
+    </div>
+</div>

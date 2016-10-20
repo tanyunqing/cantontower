@@ -1,0 +1,67 @@
+
+/* deprecated @font-faces */
+
+
+@font-face {
+    font-family: 'Knockout46Flyweight';
+    src: url('knockout-46flyweight.eot?#iefix');
+    src: url('knockout-46flyweight.eot') format('embedded-opentype'),
+         url('knockout-46flyweight.woff') format('woff'),
+         url('knockout-46flyweight.ttf') format('truetype'),
+         url('knockout-46flyweight.svg#Knockout46Flyweight') format('svg');
+}
+
+/*@font-face {
+    font-family: 'ClarendonBTLight';
+    src: url('ClarendonBT-Light.eot?#iefix');
+    src: url('ClarendonBT-Light.eot') format('embedded-opentype'),
+         url('ClarendonBT-Light.woff') format('woff'),
+         url('ClarendonBT-Light.ttf') format('truetype'),
+         url('ClarendonBT-Light.svg#ClarendonBTLight') format('svg');
+}*/
+
+
+@font-face {
+    font-family: 'Knockout26JuniorFlyweight';
+    src: url('Knockout-HTF26-JuniorFlyweight.eot?#iefix');
+    src: url('Knockout-HTF26-JuniorFlyweight.eot') format('embedded-opentype'),
+         url('Knockout-HTF26-JuniorFlyweight.woff') format('woff'),
+         url('Knockout-HTF26-JuniorFlyweight.ttf') format('truetype'),
+         url('Knockout-HTF26-JuniorFlyweight.svg#Knockout26JuniorFlyweight') format('svg');
+}
+
+/*@font-face {
+    font-family: 'Knockout51Middleweight';
+    src: url('Knockout-HTF51-Middleweight.eot?#iefix');
+    src: url('Knockout-HTF51-Middleweight.eot') format('embedded-opentype'),
+         url('Knockout-HTF51-Middleweight.woff') format('woff'),
+         url('Knockout-HTF51-Middleweight.ttf') format('truetype'),
+         url('Knockout-HTF51-Middleweight.svg#Knockout51Middleweight') format('svg');
+}*/
+
+/*@font-face {
+    font-family: 'BreuerTextBold';
+    src: url('breuertext-medium.eot?#iefix');
+    src: url('breuertext-medium.eot') format('embedded-opentype'),
+         url('breuertext-medium.woff') format('woff'),
+         url('breuertext-medium.ttf') format('truetype'),
+         url('breuertext-medium.svg#BreuerTextBold') format('svg');
+}*/
+
+/*@font-face {
+    font-family: 'BrandonGrotesqueBold';
+    src: url('BrandonGrotesque-Bold.eot?#iefix');
+    src: url('BrandonGrotesque-Bold.eot') format('embedded-opentype'),
+         url('BrandonGrotesque-Bold.woff') format('woff'),
+         url('BrandonGrotesque-Bold.ttf') format('truetype'),
+         url('BrandonGrotesque-Bold.svg#BrandonGrotesqueBold') format('svg');
+}*/
+
+@font-face {
+    font-family: 'BrandonGrotesqueRegular';
+    src: url('BrandonGrotesque-Regular.eot?#iefix');
+    src: url('BrandonGrotesque-Regular.eot') format('embedded-opentype'),
+         url('BrandonGrotesque-Regular.woff') format('woff'),
+         url('BrandonGrotesque-Regular.ttf') format('truetype'),
+         url('BrandonGrotesque-Regular.svg#BrandonGrotesqueRegular') format('svg');
+}
